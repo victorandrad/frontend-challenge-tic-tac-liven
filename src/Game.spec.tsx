@@ -32,6 +32,19 @@ it("check if X is winner", () => {
   getByText("Winner: X");
 });
 
+it("check if X is winner with double click", () => {
+  const { getByText, getByTestId } = render(<Game />);
+
+  // Board positions
+  const boardClickPositions = [4, 4, 4, 0, 0, 3, 3, 2, 2, 5, 5, 5, 4, 4];
+
+  // Scroll board and click on array positions
+  playBoard(boardClickPositions, getByTestId);
+
+  // Expect "Winner: X" to be found
+  getByText("Winner: X");
+});
+
 it("check if X is winner, after reset", () => {
   const { getByText, getByTestId } = render(<Game />);
 
