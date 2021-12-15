@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/frontend-challenge-tic-tac-liven/static/css/main.d7402321.chunk.css",
+    "main.js": "/frontend-challenge-tic-tac-liven/static/js/main.10951868.chunk.js",
+    "main.js.map": "/frontend-challenge-tic-tac-liven/static/js/main.10951868.chunk.js.map",
+    "runtime-main.js": "/frontend-challenge-tic-tac-liven/static/js/runtime-main.c70d146e.js",
+    "runtime-main.js.map": "/frontend-challenge-tic-tac-liven/static/js/runtime-main.c70d146e.js.map",
+    "static/js/2.fece782c.chunk.js": "/frontend-challenge-tic-tac-liven/static/js/2.fece782c.chunk.js",
+    "static/js/2.fece782c.chunk.js.map": "/frontend-challenge-tic-tac-liven/static/js/2.fece782c.chunk.js.map",
+    "index.html": "/frontend-challenge-tic-tac-liven/index.html",
+    "static/css/main.d7402321.chunk.css.map": "/frontend-challenge-tic-tac-liven/static/css/main.d7402321.chunk.css.map",
+    "static/js/2.fece782c.chunk.js.LICENSE.txt": "/frontend-challenge-tic-tac-liven/static/js/2.fece782c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c70d146e.js",
+    "static/js/2.fece782c.chunk.js",
+    "static/css/main.d7402321.chunk.css",
+    "static/js/main.10951868.chunk.js"
+  ]
+}
