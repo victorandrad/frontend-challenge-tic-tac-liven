@@ -6,16 +6,27 @@ import { useState } from "react";
 
 type Player = 'X' | 'O'
 
-let nextPlayer: Player = 'X';
-let currentBoard = Array(9).fill(null);
 const useGameState = () => {
+  // Transforma todas as variaveis let em variaveis de estado
   const [stepNumber, setStepNumber] = useState(0);
+  const [nextPlayer, setNextPlayer] = useState<Player>('X');
+  const [currentBoard, setCurrentBoard] = useState(Array(9).fill(null));
+
+  // Código que reseta tabuleiro
+  const resetGame = () => {    
+    setCurrentBoard([]);
+    setStepNumber(0); 
+  }
 
   const computeMove = (nextPlayer: Player, squareId: any) => {
+    // Adiciona jogada no array no tabuleiro
+    currentBoard[squareId] = nextPlayer;
+    setCurrentBoard(currentBoard);
+
     if (nextPlayer === 'X') {
-      nextPlayer = 'O'
+      setNextPlayer('O');
     } else {
-      nextPlayer = 'X'
+      setNextPlayer('X');
     }
     setStepNumber((currentStepNumber) => currentStepNumber + 1);
   }
@@ -24,7 +35,8 @@ const useGameState = () => {
     nextPlayer,
     stepNumber,
     currentBoard,
-    computeMove
+    computeMove,
+    resetGame
   }
 }
 
